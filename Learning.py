@@ -78,3 +78,97 @@ print(10 - 2)  # Вычитание.
 print(16 / 2)  # Деление.
 print(4 * 2)  # Умножение.
 # Несложно.
+
+# Задача 3.2
+# Выберите свой любимый вид транспорта (например, мотоциклы или машины) и создайте список с примерами.
+# Используйте свой список для вывода утверждений об элементах типа: «Я хотел бы купить мотоцикл Honda».
+print(Fore.GREEN + "Задача 3.2" + Style.RESET_ALL)
+names_weapon = ['PP-19', 'AK-74', 'AEK-971']
+print(f"Лучшее оружие для стрельбы по гражданским в замкнутых пространствах: {names_weapon[0]}")
+print(f"Лучшее оружие в соотношении цена - качество: {names_weapon[1]}")
+print(f"Просто хороший автомат: {names_weapon[2]}")
+
+weapons_list = []  # Создание пустого списка.
+
+weapons_list.insert(0, "M4")  # "insert" добавляет в список элемент с указанием в какую позицию, остальные смещаются.
+weapons_list.insert(1, "HK416")
+weapons_list.append("AK47")  # "append" добавляет в список элемент всегда в конец списка, остальные неподвижны.
+weapons_list.append("RPK74")
+# del weapons_list[0]  # "del" Удаляет элемент из списка, обязательное условие: нужен индекс, остальные смещаются.
+# weapons_list.pop()  # "pop" Вынимает последний элемент из списка, позволяя обращаться к нему позже. Если задать
+# индекс, вынет определённый элемент.
+# weapons_list.remove()  # "remove" Убирает элемент указанный в скобках,
+# поиск производится не по индексу, а содержанию. Может передавать его в переменную для дальнейшего использования.
+print(weapons_list)
+
+# Задача 3.4
+# Если бы вы могли пригласить кого угодно (из живых или умерших) на обед, то кого бы вы пригласили? Создайте список,
+# включающий минимум трёх людей, которых вам хотелось бы пригласить на обед. Затем используйте этот список для вывода
+# пригласительного сообщения каждому участнику.
+print(Fore.GREEN + "Задача 3.4" + Style.RESET_ALL)
+names_of_guests = ["Peter", "Marlow", "Luter", "Alice", "Mia"]
+print(f"Dear {names_of_guests[0]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[1]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[2]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[3]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[4]} come to me house and drink with me vodka!")
+# Списки, индексы, усвоил.
+
+# Задача 3.5
+# Вы только что узнали, что один из гостей прийти не сможет, поэтому вам придётся разослать новые приглашения.
+# Отсутствующего гостя нужно заменить кем-то другим.
+# • Добавьте в конец программы команду print для вывода имени гостя, который прийти не сможет.
+# • Измените список и замените имя гостя, который прийти не сможет, именем нового приглашенного.
+# • Выведите новый набор сообщений с приглашениями — по одному для каждого участника, входящего в список.
+print(Fore.GREEN + "Задача 3.5" + Style.RESET_ALL)
+not_came = names_of_guests.pop(2)
+print(f"{not_came} don't drink vodka...")
+names_of_guests.insert(2, "Elena")
+print(f"Dear {names_of_guests[0]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[1]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[2]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[3]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[4]} come to me house and drink with me vodka!")
+# Списки, замены, вроде усвоил, надо будет подглядывать пока не запомню.
+
+# Задача 3.6
+# Вы решили купить обеденный стол большего размера. Дополнительные места позволяют пригласить на обед еще трех гостей.
+print(Fore.GREEN + "Задача 3.6" + Style.RESET_ALL)
+print(Fore.YELLOW + f"We need more guys and girls, and we need more booze." + Style.RESET_ALL)
+names_of_guests.insert(0, "Alex")
+names_of_guests.insert(3, "Julie")
+names_of_guests.append("Toni")
+names_of_guests.append("Luter")
+print(f"Dear {names_of_guests[0]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[1]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[2]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[3]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[4]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[5]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[6]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[7]} come to me house and drink with me vodka!")
+print(f"Dear {names_of_guests[8]} come to me house and drink with me all what you want!")
+
+# Задача 3.7
+# Все приглашённые гости, летели к вам на вечеринку в одном самолёте, который потерпел крушение где-то посреди
+# атлантического океана. Мир праху их.
+print(Fore.GREEN + "Задача 3.6" + Style.RESET_ALL)
+names_of_dead = names_of_guests.pop()
+print(Fore.RED + f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}")
+names_of_dead = names_of_guests.pop()
+print(f"R.I.P {names_of_dead}" + Style.RESET_ALL)
+print(Fore.YELLOW + f"Well, {names_of_guests[0]} and {names_of_guests[1]}, let's drink for dead!" + Style.RESET_ALL)
+del names_of_guests[0]
+del names_of_guests[0]
+print(f"When they got drunk, they didn't share a bottle and killed each other, leaving alive...", len(names_of_guests))
+print(Fore.RED + f"Conclusion, alcohol is evil." + Style.RESET_ALL)
