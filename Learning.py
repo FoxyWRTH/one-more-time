@@ -172,3 +172,39 @@ del names_of_guests[0]
 del names_of_guests[0]
 print(f"When they got drunk, they didn't share a bottle and killed each other, leaving alive...", len(names_of_guests))
 print(Fore.RED + f"Conclusion, alcohol is evil." + Style.RESET_ALL)
+
+# Сортировка.
+print(Fore.GREEN + "Сортировка" + Style.RESET_ALL)
+
+weapons_list = ["M4", "RPK74", "HK416", "AK47", "PP19", "M16", "SVD"]
+print(weapons_list)
+print(sorted(weapons_list), "Временная сортировка")  # Временная сортировка.
+print(sorted(weapons_list, reverse=True), "Временная Обратная сортировка")
+weapons_list.sort()  # Постоянная сортировка списка.
+print(weapons_list, "Постоянная сортировка")
+weapons_list.sort(reverse=True)  # Постоянная обратная сортировка списка.
+print(weapons_list, "Постоянная обратная сортировка")
+
+weapons_list = ["M4", "RPK74", "HK416", "AK47", "PP19", "M16", "SVD"]
+weapons_list.reverse()  # Не сортирует, а просто разворачивает список задом наперёд.
+
+# Циклы.
+print(Fore.GREEN + "Циклы" + Style.RESET_ALL)
+for weapon in weapons_list:
+    print(Fore.YELLOW + weapon + Style.RESET_ALL, f"this weapon can kill people!")
+    print(Fore.RED + "KILL THEM ALL!!!" + Style.RESET_ALL)
+print(f"Just use this weapon to kill people, all people.")
+
+print(Fore.GREEN + "Задача 4.1" + Style.RESET_ALL)
+names_of_gods = ["Tzeentch", "Nurgle", "Khorne", "Slaanesh"]
+for chaos_god in names_of_gods:
+    print(Fore.LIGHTBLUE_EX + f"{chaos_god}" + Style.RESET_ALL + " is God of chaos.")
+print(Fore.RED + f"And let the galaxy, burn." + Style.RESET_ALL)
+
+wtf_num = list(range(2, 12, 3))  # Диапазон, аргументы (2 - от чего начинать, 12 конечная точка, 3 сколько добавить)
+print(wtf_num)
+
+quadro = []
+for i in range(1, 11):
+    quadro.append(i ** 4)
+print(quadro)
