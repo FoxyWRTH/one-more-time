@@ -201,10 +201,27 @@ for chaos_god in names_of_gods:
     print(Fore.LIGHTBLUE_EX + f"{chaos_god}" + Style.RESET_ALL + " is God of chaos.")
 print(Fore.RED + f"And let the galaxy, burn." + Style.RESET_ALL)
 
+print(Fore.GREEN + "Диапазон" + Style.RESET_ALL)
 wtf_num = list(range(2, 12, 3))  # Диапазон, аргументы (2 - от чего начинать, 12 конечная точка, 3 сколько добавить)
 print(wtf_num)
 
-quadro = []
+print(Fore.GREEN + "Цикл (Возведение во 2ю степень)" + Style.RESET_ALL)
+step_2 = []
 for i in range(1, 11):
-    quadro.append(i ** 4)
-print(quadro)
+    step_2.append(i ** 2)
+print(step_2)
+
+print(Fore.GREEN + "Цикл (Возведение во 2ю степень, однострочное)" + Style.RESET_ALL)
+step_2_v_2 = [numba ** 2 for numba in range(1, 11)]
+print(step_2_v_2)
+
+print(Fore.YELLOW + "Задачи на циклы" + Style.RESET_ALL)
+print(Fore.GREEN + "Задача 4.3 Используйте цикл for для вывода чисел от 1 до 20 включительно." + Style.RESET_ALL)
+
+numba_list = []
+for i in range(1, 21):
+    numba_list.append(i)
+print(numba_list, "Блок")
+
+numba_list = [i for i in range(1, 21)]
+print(numba_list, "Однострочный")
