@@ -225,3 +225,11 @@ print(numba_list, "Блок")
 
 numba_list = [i for i in range(1, 21)]
 print(numba_list, "Однострочный")
+
+print(Fore.YELLOW + "Работа с частями списка" + Style.RESET_ALL)
+print(Fore.GREEN + "Задача 4.10 Первые три сегмента списка." + Style.RESET_ALL)
+numba_list = [i for i in range(1, 11)]
+print("Сам список:", numba_list)
+print('Первые 3 сегмента:', numba_list[0:3])
+print('Средние 3 сегмента:', numba_list[3:7])
+print('Последние 3 сегмента:', numba_list[-3:])

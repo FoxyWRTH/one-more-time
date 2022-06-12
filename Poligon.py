@@ -2,10 +2,16 @@
 #
 #
 
-numba_list = []
+numba = [i for i in range(1, 21)]
 
-for i in range(1, 31):
-    if i % 3 == 0:
-        numba_list.append(i)
+print(numba)
 
-print(numba_list)
+numba_plus = numba[:]
+
+print(numba_plus)
+
+numba.append(117)
+numba_plus.append(229)
+
+print(numba)
+print(numba_plus)
