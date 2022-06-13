@@ -233,3 +233,26 @@ print("Сам список:", numba_list)
 print('Первые 3 сегмента:', numba_list[0:3])
 print('Средние 3 сегмента:', numba_list[3:7])
 print('Последние 3 сегмента:', numba_list[-3:])
+
+print(Fore.GREEN + "Задача 4.11 Копирование списков" + Style.RESET_ALL)
+
+numba_list_1 = [i for i in range(1, 11)]
+numba_list_2 = [i for i in range(11, 21)]
+print(f"Первый список", numba_list_1)
+print(f"Второй список", numba_list_2)
+
+print(Fore.GREEN + f"В список 1, скопирован список 2" + Style.RESET_ALL)
+numba_list_1 = numba_list_2[:]
+print(numba_list_1)
+print(numba_list_2)
+
+numba_list_1.append(774)
+numba_list_2.append(992)
+print(Fore.GREEN + f"В списки добавлены разные значения, они различны" + Style.RESET_ALL)
+print(numba_list_1)
+print(numba_list_2)
+print(Fore.GREEN + f"Это доказывает что произведено именно копирование а не слияние." + Style.RESET_ALL)
+print(Fore.GREEN + f"Печать списка 1 с помощью цикла" + Fore.YELLOW + " 'for'" + Style.RESET_ALL)
+for i in numba_list_2:
+    print(i)
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)

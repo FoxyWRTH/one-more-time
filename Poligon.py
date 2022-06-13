@@ -1,17 +1,7 @@
 # Место, в котором проводятся небольшие исследования/уточнения.
 #
 #
+numba_cort = 1, 2, 4, 5, 6
 
-numba = [i for i in range(1, 21)]
-
-print(numba)
-
-numba_plus = numba[:]
-
-print(numba_plus)
-
-numba.append(117)
-numba_plus.append(229)
-
-print(numba)
-print(numba_plus)
+numba_cort_2 = (i for i in range(1, 11))
+print(numba_cort, numba_cort_2)
