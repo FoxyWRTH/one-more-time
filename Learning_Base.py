@@ -256,3 +256,26 @@ print(Fore.GREEN + f"Печать списка 1 с помощью цикла" +
 for i in numba_list_2:
     print(i)
 print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.YELLOW + f"Команды 'IF' Это уже гораздо интереснее." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Задача вывести список машин, "
+                   f"Названия должны быть с большой буквы, марка BMW только большими." + Style.RESET_ALL)
+
+cars = ["audi", "reno", "Bmw", 'lada']
+for i in cars:
+    if i.lower() == "bmw":  # Что бы не зависеть от регистра, там где он не важен, заранее занижаем его.
+        print(i.upper())
+    else:
+        print(i.title())
+
+age = int(input("Введи свой возраст: \n"))
+
+if age <= 18:
+    print("Ты слишком мал, приходи позже.")
+elif 18 <= age <= 59:
+    print('Всё отлично, заходи.')
+elif age >= 60:
+    print('Дедуль, а ты потянешь?')
+else:
+    print('Вы ввели не корректные данные.')
