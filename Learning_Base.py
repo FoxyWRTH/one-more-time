@@ -269,13 +269,28 @@ for i in cars:
     else:
         print(i.title())
 
-age = int(input("Введи свой возраст: \n"))
+print(Fore.GREEN + f"Проверка на возраст" + Style.RESET_ALL)
 
-if age <= 18:
-    print("Ты слишком мал, приходи позже.")
-elif 18 <= age <= 59:
-    print('Всё отлично, заходи.')
-elif age >= 60:
-    print('Дедуль, а ты потянешь?')
+# age = input("Введи свой возраст: \n")
+#
+# if not age.isdigit():  # Используется проверка, вводится ли число или строка.
+#     print('Вы ввели не корректные данные')
+# elif int(age) <= 17:
+#     print("Ты слишком мал, приходи позже.")
+# elif 18 >= int(age) <= 59:
+#     print('Всё отлично, заходи.')
+# elif int(age) >= 60:
+#     print('Дедуль, а ты потянешь?')
+
+age = 32
+if age <= 17:
+    print('To young...')
+elif age >= 17:
+    print('All is good.')
+elif age >= 65:
+    print('To old...')
 else:
-    print('Вы ввели не корректные данные.')
+    print('WTF?')
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
