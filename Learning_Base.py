@@ -269,7 +269,7 @@ for i in cars:
     else:
         print(i.title())
 
-print(Fore.GREEN + f"Проверка на возраст" + Style.RESET_ALL)
+print(Fore.YELLOW + f"Проверка на возраст" + Style.RESET_ALL)
 
 # age = input("Введи свой возраст: \n")
 #
@@ -294,3 +294,16 @@ else:
 
 print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
 
+print(Fore.YELLOW + f"Наполнение списка" + Style.RESET_ALL)
+
+# Вот таким образом можно наполнить список, не вводя кавычки и прочие разделители.
+
+# some_list = []
+#
+# for x in range(5):
+#     i = input('Вводи наполнение списка.\n')
+#     some_list.append(i)
+#
+# print(some_list, type(some_list))
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
