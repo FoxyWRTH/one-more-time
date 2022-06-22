@@ -307,3 +307,72 @@ print(Fore.YELLOW + f"Наполнение списка" + Style.RESET_ALL)
 # print(some_list, type(some_list))
 
 print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Внесение компонентов в список, последующий перебор для сравнения, "
+                   f"возврат значений." + Style.RESET_ALL)
+#
+#
+# topi_avail = []
+# topi_request = []
+#
+# avail = 1
+# request = 1
+#
+# while avail <= 3:
+#     avail = avail+1
+#     topi_avail.append(input('What we have? \n').lower())
+#
+# while request <= 3:
+#     request = request+1
+#     topi_request.append(input('What you want? \n').lower())
+#
+# for topi_request in topi_request:
+#     if topi_request in topi_avail:
+#         print(f'Ok, added {topi_request}')
+#     else:
+#         print(f'We not have {topi_request}')
+#
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Перебор значений в списке, отдельная реакция на определённое значение." + Style.RESET_ALL)
+
+some_tags = ['WE', 'DS', 'SS', 'AA', 'ADM', 'WDD']
+
+for i in some_tags:
+    if i != 'ADM':
+        print(f'hello {i}, go kill yourself!')
+    else:
+        print('Hello Foxy! Nice to see you!')
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Проверка на успешное опустошение списка и вывод подтверждения." + Style.RESET_ALL)
+
+some_tags = ['WE', 'DS', 'SS', 'AA', 'ADM', 'WDD']
+
+some_tags.clear()
+
+if len(some_tags) == 0:
+    print(f"it's empty!")
+else:
+    print(f"Something here!")
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Сравнение двух списков, добавление отсутствующих. Сортировка." + Style.RESET_ALL)
+
+some_tags = ['we', 'ds', 'ss', 'aa', 'adm', 'wdd']
+some_tags_2 = ['WE', 'ADS', 'SSS', 'ADA', 'ADM', 'ADD']
+
+for some_tags_2 in some_tags_2:
+    if some_tags_2.lower() in some_tags:
+        print(f'{some_tags_2}, have here!')
+    else:
+        some_tags.append(some_tags_2.lower())
+        print(f'{some_tags_2}, added!')
+
+some_tags.sort()
+
+print(some_tags)
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)

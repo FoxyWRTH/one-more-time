@@ -1,10 +1,35 @@
 # Место, в котором проводятся небольшие исследования/уточнения.
 #
 #
-cort = tuple('12345')
-cort_2 = (1, 2, 3, 4, 5)
-cort_3 = tuple(input())
 
-print(cort, type(cort))
-print(cort_2, type(cort_2))
-print(cort_3, type(cort_3))
+# Получение целой части от деления.
+#
+# >>> 9 // 3
+# 3
+# >>> a = 7
+# >>> b = 4
+# >>> a // b
+# 1
+
+# Получение остатка от деления.
+#
+# >>> 9 % 5
+# 4
+# >>> a = 7
+# >>> b = 4
+# >>> a % b
+# 3
+
+numba = [i for i in range(1, 50)]
+
+for i in numba:
+    if i % 10 == 1:
+        print(i, 'год')
+    elif i // 1 >= 2 and i <= 4:
+        print(i, 'года')
+    elif i % 10 == 0 or i // 1 >= 5 and i <= 9:
+        print(i, 'лет')
+    else:
+        print(i, 'WTF???')
+
+# Надо будет доделать, не осилил.
