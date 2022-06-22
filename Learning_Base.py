@@ -376,3 +376,29 @@ some_tags.sort()
 print(some_tags)
 
 print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+print(Fore.GREEN + f"Пронумеровать окончания лет. Сделал 2 решения, думаю можно ещё короче." + Style.RESET_ALL)
+
+numba = [i for i in range(1, 36)]
+
+for i in numba:
+    if i % 10 == 1 and i != 11:
+        print(i, 'год')
+    elif 2 <= i % 10 <= 4 and i != 12 and i != 13 and i != 14:
+        print(i, 'года')
+    elif 5 <= i % 10 <= 9 or i % 10 == 0 or 11 <= i <= 14:
+        print(i, 'лет')
+    else:
+        print(i, 'WTF???')
+
+for i in numba:
+    if i % 10 == 1 and i != 11:
+        print(i, 'год')
+    elif 2 <= i % 10 <= 4 and not (12 <= i <= 14):
+        print(i, 'года')
+    elif 5 <= i % 10 <= 9 or i % 10 == 0 or 11 <= i <= 14:
+        print(i, 'лет')
+    else:
+        print(i, 'WTF???')
+
+print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
