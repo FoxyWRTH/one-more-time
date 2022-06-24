@@ -402,3 +402,46 @@ for i in numba:
         print(i, 'WTF???')
 
 print(Fore.GREEN + f"Задача выполнена." + Style.RESET_ALL)
+
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'slow', 'points': 5}
+print(f'Start position of alien: X - {alien_0["x_position"]}, Y - {alien_0["y_position"]}')
+
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'normal':
+    x_increment = 2
+else:
+    x_increment = 3
+
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+
+print(f'New Alien position: {alien_0["x_position"]}')
+
+alien_0['speed'] = 'fast'
+
+print(alien_0)
+
+del alien_0['points']  # При удалении ключа — удаляется и значение. Эффект не обратим.
+
+print(alien_0)
+
+key_station = {'color_1': 'green', 'color_2': 'red',
+               'color_3': 'yellow', 'color_4': 'black',
+               'color_5': 'pink', 'color_6': 'violet',
+               'color_7': 'white', 'color_8': 'indigo'}
+
+print(key_station)
+
+key_station['color_5'] = 'blue'  # Добавление ключ — значение в словарь.
+
+print(Fore.GREEN + f'My favorite color is: {Fore.RED + key_station["color_2"] + Style.RESET_ALL}' + Style.RESET_ALL)
+
+# С помощью функции "get" можно проверять есть ли ключ в словаре.
+print(key_station.get('color_9', Fore.LIGHTMAGENTA_EX + 'Nothing here!' + Style.RESET_ALL))
+# В первом аргументе сообщается ключ, во втором, что вывести если отсутствует.
+
+# Множественное присваивание! О_о
+name, age, region = input('Имя?'), input('Возраст?'), input('Регион?')
+
+print(f'Твоё имя: {name} Твой возраст: {age} Твой регион: {region}')
+
