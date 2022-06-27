@@ -441,7 +441,66 @@ print(key_station.get('color_9', Fore.LIGHTMAGENTA_EX + 'Nothing here!' + Style.
 # В первом аргументе сообщается ключ, во втором, что вывести если отсутствует.
 
 # Множественное присваивание! О_о
-name, age, region = input('Имя?'), input('Возраст?'), input('Регион?')
+# name, age, region = input('Имя?'), input('Возраст?'), input('Регион?')
+#
+# print(f'Твоё имя: {name} Твой возраст: {age} Твой регион: {region}')
 
-print(f'Твоё имя: {name} Твой возраст: {age} Твой регион: {region}')
+user_name = {'Login': 'FXR',
+             'Firs_Name': 'Foxy',
+             'Last_name': 'WRTH'}
 
+favorite_language = {'Foxy': 'Python',
+                     'Alice': 'Ruby',
+                     'Dani': 'Java',
+                     'Lisa': '1C',
+                     'Mark': 'Python',
+                     'Julia': 'C++',
+                     'Jan': 'C++'}
+
+for key, value in favorite_language.items():  # Перебор ключей и значений.
+    print(f'Name: {key} | Language: {value}')
+
+friends_name = ['Foxy', 'Alice']
+
+for name in favorite_language.keys():  # Проверка наличия ключей friends_name в словаре и вывод значений.
+    print(name.title())
+    if name in friends_name:
+        language = favorite_language[name.title()]
+        print(f'Hi! {name}, I see your language: {language}')
+
+
+people_name = ['Foxy', 'Alice', 'Dani', 'Lisa', 'Mark', 'Julia', 'Jan', 'Alex', 'Toni']
+
+for name in people_name:  # Проверка наличия ключей friends_name в словаре и вывод значений.
+    if name in favorite_language.keys():
+        print(f'Hi {name}, thank you for join us!')
+    elif name not in favorite_language.keys():
+        print(f'Dear {name}! Join us!')
+
+
+if 'Erl' not in favorite_language.keys():  # Проверка на отсутствие по ключу.
+    print(f'WTF "Erl"? Go fuck yourself!')
+
+for value in set(favorite_language.values()):  # Set - Устраняет повторения.
+    print(f'Language is {value}')
+
+# 6.3
+# Глоссарий: словари Python могут использоваться для моделирования «настоящего» словаря (чтобы не создавать
+# путаницу, назовём его глоссарием):
+# Вспомните пять терминов из области программирования, которые вы узнали в
+# предыдущих главах. Используйте эти слова как ключи глоссария, а их определения — как значения.
+# Выведите каждое слово и его определение в аккуратно отформатированном виде.
+# Например, вы можете вывести слово, затем двоеточие и определение или же слово в одной строке,
+# а его определение — с отступом в следующей строке. Используйте символ
+# новой строки (\n) для вставки пустых строк между парами «слово — определение» в выходных данных.
+
+some_data = {"1st": "Do what you can.",
+             "2nd": "Don't be a lazy fox!",
+             "3rd": "Don't give up.",
+             "4th": "Just do it.",
+             "5th": "Yes you can!",
+             "6th": "Make your dreams come true!",
+             "7th": "Nothing is impossible!"}
+
+for key, value in some_data.items():
+    print(f"Rule {key}: {value}")
