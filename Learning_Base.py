@@ -468,7 +468,6 @@ for name in favorite_language.keys():  # Проверка наличия клю�
         language = favorite_language[name.title()]
         print(f'Hi! {name}, I see your language: {language}')
 
-
 people_name = ['Foxy', 'Alice', 'Dani', 'Lisa', 'Mark', 'Julia', 'Jan', 'Alex', 'Toni']
 
 for name in people_name:  # Проверка наличия ключей friends_name в словаре и вывод значений.
@@ -476,7 +475,6 @@ for name in people_name:  # Проверка наличия ключей friends
         print(f'Hi {name}, thank you for join us!')
     elif name not in favorite_language.keys():
         print(f'Dear {name}! Join us!')
-
 
 if 'Erl' not in favorite_language.keys():  # Проверка на отсутствие по ключу.
     print(f'WTF "Erl"? Go fuck yourself!')
